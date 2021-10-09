@@ -1,0 +1,26 @@
+db.getCollection('profilesservices').updateOne({_id: ObjectId("603ce3bf9323e811c86cb7c8")}, {
+ $set: {"jobPreferences.jobInterests.1": "backend developer"}    
+})
+
+## sample database
+{
+    "_id" : ObjectId("603ce3bf9323e811c86cb7c8"),
+    "jobPreferences" : {
+        "jobId" : "3c7d3c4c-756b-490f-b6ab-9c0992b120b3",
+        "jobInterests" : [ 
+            "frontend developer", 
+            "devOps"
+        ],
+        "workTypes" : [ 
+            "full-time", 
+            "part-time", 
+            "magang", 
+            "freelance"
+        ],
+        "salaryExpectation" : 4500000,
+        "workCityPreferences" : [ 
+            "bandung", 
+            "jakarta", 
+            "bali"
+        ]
+    },
